@@ -1,12 +1,13 @@
 [package]
 name = "tree-sitter-dockerfile"
 description = "dockerfile grammar for the tree-sitter parsing library"
-version = "0.2.0"
-keywords = ["incremental", "parsing", "dockerfile"]
-categories = ["parsing", "text-editors"]
-repository = "https://github.com/camdencheek/tree-sitter-dockerfile"
-edition = "2018"
+version = "0.3.0"
+keywords = ["incremental", "parsing", "tree-sitter", "dockerfile"]
+categories = ["parser-implementations", "parsing", "text-editors"]
+repository = "https://github.com/sureshjoshi/tree-sitter-dockerfile"
+edition = "2021"
 license = "MIT"
+autoexamples = false
 
 build = "bindings/rust/build.rs"
 include = [
@@ -14,13 +15,18 @@ include = [
   "grammar.js",
   "queries/*",
   "src/*",
+  "tree-sitter.json",
+  "/LICENSE",
 ]
 
 [lib]
 path = "bindings/rust/lib.rs"
 
 [dependencies]
-tree-sitter = "0.24"
+tree-sitter-language = "0.1"
 
 [build-dependencies]
-cc = "1.0"
+cc = "1.2"
+
+[dev-dependencies]
+tree-sitter = "0.25.10"

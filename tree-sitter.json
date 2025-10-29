@@ -1,4 +1,5 @@
 {
+  "$schema": "https://tree-sitter.github.io/tree-sitter/assets/schemas/config.schema.json",
   "grammars": [
     {
       "name": "dockerfile",
@@ -14,21 +15,28 @@
       ],
       "highlights": [
         "queries/highlights.scm"
-      ]
+      ],
+      "injection-regex": "^dockerfile$",
+      "class-name": "TreeSitterDockerfile"
     }
   ],
   "metadata": {
-    "version": "0.2.0",
-    "license": "ISC",
+    "version": "0.3.0",
+    "license": "MIT",
     "description": "A tree-sitter module for the Dockerfile grammar",
     "authors": [
       {
         "name": "Camden Cheek",
         "email": "camden@ccheek.com"
+      },
+      {
+        "name": "SJ",
+        "email": "suresh@robotpajamas.com",
+        "url": "https://sureshjoshi.com"
       }
     ],
     "links": {
-      "repository": "https://github.com/tree-sitter/tree-sitter-dockerfile"
+      "repository": "https://github.com/sureshjoshi/tree-sitter-dockerfile"
     }
   },
   "bindings": {

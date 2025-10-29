@@ -1,11 +1,11 @@
 [build-system]
-requires = ["setuptools>=42", "wheel"]
+requires = ["setuptools>=62.4.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "tree-sitter-dockerfile"
 description = "Dockerfile grammar for tree-sitter"
-version = "0.2.0"
+version = "0.3.0"
 keywords = ["incremental", "parsing", "tree-sitter", "dockerfile"]
 classifiers = [
   "Intended Audience :: Developers",
@@ -14,16 +14,17 @@ classifiers = [
   "Topic :: Text Processing :: Linguistic",
   "Typing :: Typed"
 ]
-requires-python = ">=3.8"
+authors = [{ name = "Camden Cheek", email = "camden@ccheek.com" }, { name = "SJ", email = "suresh@robotpajamas.com" }]
+requires-python = ">=3.10"
 license.text = "MIT"
 readme = "README.md"
 
 [project.urls]
-Homepage = "https://github.com/camdencheek/tree-sitter-dockerfile"
+Homepage = "https://github.com/sureshjoshi/tree-sitter-dockerfile"
 
 [project.optional-dependencies]
-core = ["tree-sitter~=0.21"]
+core = ["tree-sitter~=0.24"]
 
 [tool.cibuildwheel]
-build = "cp38-*"
+build = "cp310-*"
 build-frontend = "build"
