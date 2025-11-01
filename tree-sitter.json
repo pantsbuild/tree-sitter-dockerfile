@@ -36,7 +36,7 @@
       }
     ],
     "links": {
-      "repository": "https://github.com/sureshjoshi/tree-sitter-dockerfile"
+      "repository": "https://github.com/pantsbuild/tree-sitter-dockerfile"
     }
   },
   "bindings": {

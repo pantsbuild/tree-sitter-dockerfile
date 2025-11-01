@@ -3,7 +3,7 @@ $(error Windows is not supported)
 endif
 
 LANGUAGE_NAME := tree-sitter-dockerfile
-HOMEPAGE_URL := https://github.com/sureshjoshi/tree-sitter-dockerfile
+HOMEPAGE_URL := https://github.com/pantsbuild/tree-sitter-dockerfile
 VERSION := 0.3.0
 
 # repository

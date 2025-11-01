@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 3.13)
 project(tree-sitter-dockerfile
         VERSION "0.3.0"
         DESCRIPTION "A tree-sitter module for the Dockerfile grammar"
-        HOMEPAGE_URL "https://github.com/sureshjoshi/tree-sitter-dockerfile"
+        HOMEPAGE_URL "https://github.com/pantsbuild/tree-sitter-dockerfile"
         LANGUAGES C)
 
 option(BUILD_SHARED_LIBS "Build using shared libraries" ON)

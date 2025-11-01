@@ -1,4 +1,4 @@
-module github.com/sureshjoshi/tree-sitter-dockerfile
+module github.com/pantsbuild/tree-sitter-dockerfile
 
 go 1.22
 
